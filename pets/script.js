@@ -52,7 +52,7 @@ document.addEventListener('click', function (event) {
 const GLOBAL_ARRAY = [
   {
     name: "Jennifer",
-    img: "../../assets/images/jennifer.png",
+    img: "../assets/images/jennifer.png",
     type: "Dog",
     breed: "Labrador",
     description:
@@ -64,7 +64,7 @@ const GLOBAL_ARRAY = [
   },
   {
     name: "Sophia",
-    img: "../../assets/images/sophia.png",
+    img: "../assets/images/sophia.png",
     type: "Dog",
     breed: "Shih tzu",
     description:
@@ -76,7 +76,7 @@ const GLOBAL_ARRAY = [
   },
   {
     name: "Woody",
-    img: "../../assets/images/woody.png",
+    img: "../assets/images/woody.png",
     type: "Dog",
     breed: "Golden Retriever",
     description:
@@ -88,7 +88,7 @@ const GLOBAL_ARRAY = [
   },
   {
     name: "Scarlett",
-    img: "../../assets/images/scarlett.png",
+    img: "../assets/images/scarlett.png",
     type: "Dog",
     breed: "Jack Russell Terrier",
     description:
@@ -100,7 +100,7 @@ const GLOBAL_ARRAY = [
   },
   {
     name: "Katrine",
-    img: "../../assets/images/katrine.png",
+    img: "../assets/images/katrine.png",
     type: "Cat",
     breed: "British Shorthair",
     description:
@@ -112,7 +112,7 @@ const GLOBAL_ARRAY = [
   },
   {
     name: "Timmy",
-    img: "../../assets/images/timmy.png",
+    img: "../assets/images/timmy.png",
     type: "Cat",
     breed: "British Shorthair",
     description:
@@ -124,7 +124,7 @@ const GLOBAL_ARRAY = [
   },
   {
     name: "Freddie",
-    img: "../../assets/images/freddie.png",
+    img: "../assets/images/freddie.png",
     type: "Cat",
     breed: "British Shorthair",
     description:
@@ -136,7 +136,7 @@ const GLOBAL_ARRAY = [
   },
   {
     name: "Charly",
-    img: "../../assets/images/charly.png",
+    img: "../assets/images/charly.png",
     type: "Dog",
     breed: "Jack Russell Terrier",
     description:

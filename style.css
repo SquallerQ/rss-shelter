@@ -75,16 +75,16 @@ main {
 }
 @font-face {
   font-family: 'Arial';
-  src: url('../../assets/fonts/arial.woff2') format("woff2"),
-       url('../../assets/fonts/arial.woff') format('woff');
+  src: url('assets/fonts/arial.woff2') format("woff2"),
+       url('assets/fonts/arial.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Georgia';
-  src: url('../../assets/fonts/georgia.woff2') format("woff2"),
-       url('../../assets/fonts/georgia.woff') format("woff");
+  src: url('assets/fonts/georgia.woff2') format("woff2"),
+       url('assets/fonts/georgia.woff') format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -96,7 +96,7 @@ body {
 
 /* header styles */
 .header {
-  background: url('../../assets/images/background.png'), url('../../assets/images/background--second.png'), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 70%)  #211F20;
+  background: url('assets/images/background.png'), url('assets/images/background--second.png'), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 70%)  #211F20;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -294,10 +294,10 @@ body {
   margin-left: 12px;
 }
 .pets__slider-arrow--left {
-  background-image: url('../../assets/icons/left-arrow.svg');
+  background-image: url('assets/icons/left-arrow.svg');
 }
 .pets__slider-arrow--right {
-  background-image: url('../../assets/icons/right-arrow.svg');
+  background-image: url('assets/icons/right-arrow.svg');
 }
 .pets__slider-cards {
   display: flex;
@@ -490,7 +490,7 @@ body {
 }
 /* footer styles */
 footer {
-  background: url('../../assets/images/background--second.png'), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 60%), #211F20;
+  background: url('assets/images/background--second.png'), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 60%), #211F20;
 }
 .footer__inner {
   padding-top: 40px;

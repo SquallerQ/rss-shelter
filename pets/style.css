@@ -79,16 +79,16 @@ main {
 }
 @font-face {
   font-family: 'Arial';
-  src: url('../../assets/fonts/arial.woff2') format("woff2"),
-       url('../../assets/fonts/arial.woff') format('woff');
+  src: url('../assets/fonts/arial.woff2') format("woff2"),
+       url('../assets/fonts/arial.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Georgia';
-  src: url('../../assets/fonts/georgia.woff2') format("woff2"),
-       url('../../assets/fonts/georgia.woff') format("woff");
+  src: url('../assets/fonts/georgia.woff2') format("woff2"),
+       url('../assets/fonts/georgia.woff') format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -293,7 +293,7 @@ body {
 
 /* footer styles */
 footer {
-  background: url('../../assets/images/background--second.png'), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 60%), #211F20;
+  background: url('../assets/images/background--second.png'), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 60%), #211F20;
 }
 .footer__inner {
   padding-top: 40px;
