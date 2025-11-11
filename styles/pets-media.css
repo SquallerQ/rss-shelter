@@ -1,0 +1,44 @@
+
+
+/* burger-menu */
+@media (max-width: 767px) {
+  .header-top__menu-item--active {
+    padding-top: 25px;
+    border-bottom: none;
+  }
+  .header-top__menu-item--active::before {
+    content: '';
+    position: absolute;
+    top: 51px;
+    right: 132px;
+    width: 58px;
+    height: 3px;
+    background-color: #f1cdb3;
+  }
+  .header-top__menu-item {
+    color: #fafafa;
+  }
+  .header-top__menu-link {
+    color: #fafafa;
+    padding: 44px 39px;
+  } 
+}
+
+/* pets */
+@media (max-width: 1050px)  {
+  .pets__title {
+    margin-bottom: 30px;
+  }
+  .pets__cards {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .pets__title {
+    font-size: 25px;
+    line-height: 32px;
+  }
+  .pets__pagination-item + .pets__pagination-item {
+    margin-left: 10px;
+  }
+}
