@@ -84,15 +84,18 @@
 }
 
 /* pets */
-@media (max-width: 1050px) {
-  .pets__slider-cards {
-    gap: 40px; 
-  }
-  .pets__slider-card:last-child {
-    display: none;
+@media (max-width: 1200px) {
+  .pets__slider-track {
+    gap: 60px;
+    width: calc((270px * 2) + (40px * 1));
   }
 }
-@media (max-width: 650px) {
+@media (max-width: 1100px) {
+  .pets__slider-track {
+    gap: 40px;
+  }
+}
+@media (max-width: 768px) {
   .pets__inner {
     padding: 40px 0;
   }
@@ -100,9 +103,6 @@
     font-size: 25px;
     line-height: 32px;
     margin-bottom: 30px;
-  }
-  .pets__slider-card:nth-child(even) {
-    display: none;
   }
   .pets__slider {
     margin-bottom: 30px;
@@ -120,7 +120,11 @@
   .pets__slider-arrow_wrapper--first {
     margin-right: 70px;
   }
-}
+  .pets__slider-track {
+    gap: 0;
+    width: 270px;
+  }
+} 
 
 /* help */
 @media (max-width: 1050px) {
