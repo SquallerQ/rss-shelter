@@ -9,7 +9,6 @@ initBurgerMenu();
 function generateArrays() {
   const mainArray = [];
   const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
-  // Function to shuffle
   function shuffleArray(array) {
     const arrayCopy = [...array];
     // Fisher-Yates algorithm
@@ -53,9 +52,7 @@ function generateArrays() {
   return mainArray;
 }
 const result = generateArrays();
-const Main = result.flat();
-
-console.log(result);
+const allCards = result.flat();
 
 let currentPage = 1;
 let cardsPerPage = 8;
@@ -110,7 +107,7 @@ function updatePagination() {
     prevBtn.classList.remove('btn__enabled');
     prevBtn.classList.add('btn__disabled');
   }
-  if (currentPage == totalPages) {
+  if (currentPage === totalPages) {
     lastPageBtn.classList.add('btn__disabled');
     lastPageBtn.classList.remove('btn__enabled');
     nextBtn.classList.remove('btn__enabled');
@@ -128,7 +125,7 @@ function renderCards() {
 
   const startIdx = (currentPage - 1) * cardsPerPage;
   const endIdx = startIdx + cardsPerPage;
-  const currentCards = Main.slice(startIdx, endIdx);
+  const currentCards = allCards.slice(startIdx, endIdx);
 
   currentCards.forEach((cardNumber) => {
     const cardData = PETS_ARRAY[cardNumber - 1];
@@ -152,7 +149,6 @@ function cardsOnPage() {
     totalPages = 8;
     cardsPerPage = 6;
   } else if (width <= 320) {
-    console.log(true);
     totalPages = 16;
     cardsPerPage = 3;
   }
@@ -170,7 +166,8 @@ petsCardsContainer.addEventListener('click', function (event) {
 
   if (card) {
     const cardIndex = Array.from(petsCardsContainer.children).indexOf(card);
-    const cardNumber = Main[cardIndex];
+    const startIdx = (currentPage - 1) * cardsPerPage;
+    const cardNumber = allCards[startIdx + cardIndex];
     const cardData = PETS_ARRAY[cardNumber - 1];
 
     openModal(cardData, "pets");
